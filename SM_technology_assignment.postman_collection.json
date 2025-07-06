@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "5e9a87db-7ddf-4a6d-9605-9db822cb1b41",
+		"name": "SM_technology_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29865171"
+	},
+	"item": [
+		{
+			"name": "register_customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"customer\",\n  \"email\": \"customer@gmail.com\",\n  \"password\": \"pass1234\",\n  \"role\": \"user\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/register/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register_delivery",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"delivery\",\n  \"email\": \"delivery@gmail.com\",\n  \"password\": \"pass1234\",\n  \"role\": \"delivery\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/register/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register_admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin1\",\n  \"email\": \"admin1@gmail.com\",\n  \"password\": \"pass1234\",\n  \"role\": \"admin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/register/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer_login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"customer\",\n  \"password\": \"pass1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/login/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delivery_login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"delivery\",\n  \"password\": \"pass1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/login/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin1\",\n  \"password\": \"pass1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/auth/login/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Place_order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4NTgxLCJpYXQiOjE3NTE4MTgyODEsImp0aSI6IjllYmNhMzliY2ZiZTRlZDQ4OTczYTRjZjZmYjE4OGI0IiwidXNlcl9pZCI6NH0.sHc5Srya-ERtRcFKQ5LfBlo2PFInR1NfrInH-UcEN7A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODA1ODM1LCJpYXQiOjE3NTE4MDU1MzUsImp0aSI6IjAyNDMyNWU1YTRlMDQxOGE5NTUyMDdkOWYyNjU2NWVkIiwidXNlcl9pZCI6MX0.aEC1kwFQucKPIkLbvO0MTVvzUtgZIHDwrgLonQpn25Y"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Deliver documents to Mumbai office\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4NTgxLCJpYXQiOjE3NTE4MTgyODEsImp0aSI6IjllYmNhMzliY2ZiZTRlZDQ4OTczYTRjZjZmYjE4OGI0IiwidXNlcl9pZCI6NH0.sHc5Srya-ERtRcFKQ5LfBlo2PFInR1NfrInH-UcEN7A"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Deliver documents to Mumbai office\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assign_delivery",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4OTkwLCJpYXQiOjE3NTE4MTg2OTAsImp0aSI6ImU2NWM2MDFhN2M0YjRkOWY4OWRkMjMyOWYzMDBmNDhmIiwidXNlcl9pZCI6Nn0.pcdKpcYgPROqZWX8mvSEFVhlJCrkuLXoL14rqnRFoUA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"delivery_man_id\": 5\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/1/assign/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1",
+						"assign",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_get_order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4OTkwLCJpYXQiOjE3NTE4MTg2OTAsImp0aSI6ImU2NWM2MDFhN2M0YjRkOWY4OWRkMjMyOWYzMDBmNDhmIiwidXNlcl9pZCI6Nn0.pcdKpcYgPROqZWX8mvSEFVhlJCrkuLXoL14rqnRFoUA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delivery_get_orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4OTgwLCJpYXQiOjE3NTE4MTg2ODAsImp0aSI6IjNhMTZhMmZlYzYwNjQ2YTk5MTc4OWFmNjlkODY3MWUzIiwidXNlcl9pZCI6NX0.Zh0b3ldM1QHgCG3Il6L6jtxV4cXDlXS8Q7npvYGEbh8"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODE4NTgxLCJpYXQiOjE3NTE4MTgyODEsImp0aSI6IjllYmNhMzliY2ZiZTRlZDQ4OTczYTRjZjZmYjE4OGI0IiwidXNlcl9pZCI6NH0.sHc5Srya-ERtRcFKQ5LfBlo2PFInR1NfrInH-UcEN7A"
+					}
+				],
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/2/pay/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"2",
+						"pay",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delivery_status_update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxODIxNzE2LCJpYXQiOjE3NTE4MjE0MTYsImp0aSI6ImVhY2M1N2I5Y2NkYTQ2ODNhNDUyYzhjM2YyY2NkN2QzIiwidXNlcl9pZCI6Mn0.pxkHv1QsgWSsS0VcnTJjF6F3e1K5zm-uLO8lnmNJCe4"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"picked\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sm-technology-project.onrender.com/api/v1/orders/1/",
+					"protocol": "https",
+					"host": [
+						"sm-technology-project",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
