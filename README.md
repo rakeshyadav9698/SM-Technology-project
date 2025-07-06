@@ -1,24 +1,22 @@
-# SM-Technology-project
-You can paste this in your README.md file:
-
 🚚 Courier Management System — Backend API
-Tech Stack: Django, Django REST Framework, JWT, Stripe (test), PostgreSQL
+Tech Stack: Django · Django REST Framework · JWT · Stripe (Test Mode) · PostgreSQL
 
 📄 Project Overview
-This is a RESTful backend API for a Courier Management System with 3 roles:
+This is a RESTful backend API for a Courier Management System designed to handle real-world courier operations with role-based access.
 
-Admin: Manages all users, orders, and can assign delivery men.
+Supported Roles:
+Admin: Full access to manage users, orders, and assign delivery men.
 
-Delivery Man: Can view and update status of assigned orders.
+Delivery Man: Can view and update the status of assigned orders.
 
-User: Can register, log in, create orders, make payments, and track delivery status.
+User: Can register, log in, create orders, make payments, and track delivery status (pending, delivered, complete).
 
 🔐 Authentication
-JWT-based login and registration
+JWT-based registration and login
 
-Token generation via /auth/login/
+Role-based permissions using is_admin, is_delivery, and is_user flags
 
-Role-based access control (admin, delivery, user)
+Tokens are issued via: POST /api/v1/auth/login/
 
 📦 Features by Role
 🧑‍💼 Admin
@@ -26,39 +24,74 @@ View all orders
 
 Assign delivery men to orders
 
-Full access to users and data
+View/manage all users
 
 🚚 Delivery Man
 View only assigned orders
 
-Update delivery status (pending, delivered, complete)
+Update order delivery status
 
 👤 User
 Register / Login
 
-Create order
+Create new orders
 
-View and track orders
+Track order status
 
-Make Stripe payments (test)
+Make payments via Stripe (test mode only)
 
 🔗 Live API
-perl
-Copy
-Edit
-https://api/v1/
+🌐 Base URL:
+https://sm-technology-project.onrender.com/api/v1/
+
 📤 Postman Collection
-Download / View: 
+🧪 Click here to view/download Postman collection
+[Uploading SM_technology_assignment.postman_collection.json…]()
 
-(Upload your exported .json file to Google Drive or GitHub and link it here)
 
-🔐 Login Credentials (Test Users)
+🔐 Test Login Credentials
 Role	Username	Password
 Admin	admin	pass1234
 Delivery Man	rakesh	pass1234
 User	john	pass1234
 
-Database ERD
-![image](https://github.com/user-attachments/assets/deb167bb-0e20-4b0c-b747-1eb2c8e81ee2)
+🗃️ ERD (Entity Relationship Diagram)
+![image](https://github.com/user-attachments/assets/a192cf96-de04-4484-8b74-3df2d43019cb)
 
 
+✅ Example API Endpoints
+
+Method	Endpoint	Description
+
+POST	/auth/register/	User registration
+
+POST	/auth/login/	User login (returns JWT token)
+
+GET	/orders/	View orders (by role access)
+
+POST	/orders/	Create order (user only)
+
+PATCH	/orders/:id/assign/	Assign delivery man (admin only)
+
+PATCH	/orders/:id/status/	Update delivery status (delivery only)
+
+POST	/orders/:id/pay/	Make payment using Stripe (user only)
+
+
+📦 Setup Instructions
+# Clone the repo
+git clone https://github.com/rakeshyadav9698/SM-Technology-project.git
+cd SM-Technology-project
+
+# Setup virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Apply migrations
+python manage.py migrate
+
+# Run the server
+python manage.py runserver
