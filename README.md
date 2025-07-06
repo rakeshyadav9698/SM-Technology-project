@@ -46,7 +46,8 @@ https://sm-technology-project.onrender.com/api/v1/
 
 📤 Postman Collection
 🧪 Click here to view/download Postman collection
-(Upload your Postman .json to GitHub or Google Drive and replace the link)
+[Uploading SM_technology_assignment.postman_collection.json…]()
+
 
 🔐 Test Login Credentials
 Role	Username	Password
@@ -55,17 +56,25 @@ Delivery Man	rakesh	pass1234
 User	john	pass1234
 
 🗃️ ERD (Entity Relationship Diagram)
+![image](https://github.com/user-attachments/assets/a192cf96-de04-4484-8b74-3df2d43019cb)
 
-Or embed the image from a site like dbdiagram.io or drawsql.app
 
 ✅ Example API Endpoints
+
 Method	Endpoint	Description
+
 POST	/auth/register/	User registration
+
 POST	/auth/login/	User login (returns JWT token)
+
 GET	/orders/	View orders (by role access)
+
 POST	/orders/	Create order (user only)
+
 PATCH	/orders/:id/assign/	Assign delivery man (admin only)
+
 PATCH	/orders/:id/status/	Update delivery status (delivery only)
+
 POST	/orders/:id/pay/	Make payment using Stripe (user only)
 
 
